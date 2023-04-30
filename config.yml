@@ -4,6 +4,7 @@ i18n:
   structure: single_file
   locales: [en, de, fr]
   defaultLocale: en
+media_folder: img  
 collections:
   - label: Landings
     name: landings
