@@ -1,1 +1,34 @@
-
+backend:
+  name: git-gateway
+i18n:
+  structure: single_file
+  locales: [en, de, fr]
+  defaultLocale: en
+collections:
+  - label: Landings
+    name: landings
+    create: true
+    folder: site
+    i18n: true
+    format: json
+    fields:
+      - label: Slug
+        name: title
+        widget: string
+        i18n: true
+        required: true      
+  - label: Static
+    name: static
+    create: true
+    i18n: true
+    format: json
+    files:
+      - name: interface
+        label: Interface-translations
+        file: interface.json
+        fields:
+          - name: test
+            label: test
+            widget: string
+            i18n: true
+            required: false
